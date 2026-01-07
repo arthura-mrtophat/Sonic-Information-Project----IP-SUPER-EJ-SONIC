@@ -1,0 +1,24 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://qxkxc6lyd7s5"]
+
+[ext_resource type="Texture2D" uid="uid://ddq46nfk5hwqu" path="res://Sprites/Tilesets/newtiles.png" id="1_movn1"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_28ly8"]
+resource_name = "Test TileSet"
+texture = ExtResource("1_movn1")
+texture_region_size = Vector2i(256, 256)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(85.89386, -128, 30.258057, -107.36734, -12.688873, -90.7742, -41.97087, -70.2768, -71.25288, -36.114464, -106.39128, 25.377731, -128, 128, -128, -128)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, -65.39648, -120.05621, -30.258072, -105.41521, 39.042664, -64.42041, 73.205, -22.44954, 112.247665, 45.875137, 128, 128, 128, -128)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, 128, -128, 128)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, -115.17587, -52.707603, -86.869934, 18.545273, -46.851204, 61.492203, 8.784607, 100.53487, 60.516144, 116.15193, 128, 128, -128, 128)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, 128, -61.492203, 115.17587, -1.9521332, 91.750275, 51.731537, 56.611862, 79.06141, 15.617065, 114.1998, -52.707596, 128, -128, 128, 128)
+2:1/0 = 0
+
+[resource]
+tile_size = Vector2i(256, 256)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_28ly8")

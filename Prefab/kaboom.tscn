@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw6a5knofsxdm"]
+
+[ext_resource type="SpriteFrames" uid="uid://s213ft5lcum2" path="res://Sprites/Enemies/Boom.tres" id="1_pevbq"]
+[ext_resource type="Script" uid="uid://bx7ftly224xeh" path="res://Scripts/DestroyOnEnd.cs" id="2_h157q"]
+
+[node name="Kaboom" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_pevbq")
+script = ExtResource("2_h157q")

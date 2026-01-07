@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://d35yjdtyx1oqb"]
+
+[ext_resource type="SpriteFrames" uid="uid://ckiiv201kmhg5" path="res://Sprites/Enemies/Motorbug.tres" id="1_pbl4c"]
+[ext_resource type="Script" uid="uid://cu88eix31k0b7" path="res://Scripts/Entities/Motorbug.cs" id="2_wgun1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y1m18"]
+size = Vector2(23, 23)
+
+[node name="Motorbug" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_pbl4c")
+script = ExtResource("2_wgun1")
+metadata/ItemType = "Enemy"
+
+[node name="SensorRotation" type="Node2D" parent="."]
+top_level = true
+position = Vector2(452, 483)
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="Area"]
+position = Vector2(-1, 2.5)
+shape = SubResource("RectangleShape2D_y1m18")

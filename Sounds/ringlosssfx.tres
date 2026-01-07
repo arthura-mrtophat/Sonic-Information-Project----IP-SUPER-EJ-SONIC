@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cj6lfbqhepyl"]
+
+[ext_resource type="AudioStream" uid="uid://myjkgovsx1jp" path="res://Sounds/RingLoss.wav" id="1_vgdww"]
+[ext_resource type="Script" uid="uid://unbvt2il2gdm" path="res://Scripts/Classes/SoundEffect.cs" id="2_3codr"]
+
+[resource]
+script = ExtResource("2_3codr")
+SoundType = 5
+Volume = 0.5
+Sound = ExtResource("1_vgdww")
+metadata/_custom_type_script = "uid://unbvt2il2gdm"

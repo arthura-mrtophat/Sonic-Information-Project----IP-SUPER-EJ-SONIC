@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://btht4skxn7cwr"]
+
+[ext_resource type="PackedScene" uid="uid://csmdhcqbcbrdb" path="res://Prefab/ring.tscn" id="1_722yl"]
+[ext_resource type="Script" uid="uid://bcgm414sj4i36" path="res://Scripts/Entities/Ring.cs" id="2_tu514"]
+
+[node name="Ring" instance=ExtResource("1_722yl")]
+script = ExtResource("2_tu514")
+
+[node name="SensorRotation" type="Node2D" parent="." index="1"]

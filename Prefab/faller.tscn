@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://co2actyn8tn1v"]
+
+[ext_resource type="Texture2D" uid="uid://bjs3uip6d4goi" path="res://Sprites/Items/Grass.png" id="1_gw0k1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vipjb"]
+size = Vector2(96.06885, 31.81836)
+
+[node name="Grass" type="Sprite2D"]
+scale = Vector2(1.208334, 1.1)
+texture = ExtResource("1_gw0k1")
+centered = false
+metadata/ItemType = "PlatformFall"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(47.96582, 19.54541)
+shape = SubResource("RectangleShape2D_vipjb")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 5
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(0, 3.6362305, 18.207031, 3.6362305, 49.655273, 11.818115, 76.13794, 19.09082, 96, 19.09082, 96, 51.818115, 0, 51.818115)

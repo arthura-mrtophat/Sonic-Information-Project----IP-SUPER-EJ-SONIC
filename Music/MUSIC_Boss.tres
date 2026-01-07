@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bw3xuiho54i71"]
+
+[ext_resource type="AudioStream" uid="uid://dnyvjsotd5nxb" path="res://Music/Bosses.wav" id="1_g0ngc"]
+[ext_resource type="Script" uid="uid://unbvt2il2gdm" path="res://Scripts/Classes/SoundEffect.cs" id="2_0u5x2"]
+
+[resource]
+script = ExtResource("2_0u5x2")
+PlayLimit = 1
+SoundType = 11
+Volume = -10.0
+Sound = ExtResource("1_g0ngc")
+metadata/_custom_type_script = "uid://unbvt2il2gdm"

@@ -1,0 +1,42 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://s213ft5lcum2"]
+
+[ext_resource type="Texture2D" uid="uid://dqumfo5mkclh1" path="res://Sprites/Enemies/boom.png" id="1_vfp3g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rkhkc"]
+atlas = ExtResource("1_vfp3g")
+region = Rect2(0, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lwhmy"]
+atlas = ExtResource("1_vfp3g")
+region = Rect2(40, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bttms"]
+atlas = ExtResource("1_vfp3g")
+region = Rect2(80, 0, 40, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5in4x"]
+atlas = ExtResource("1_vfp3g")
+region = Rect2(120, 0, 40, 40)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rkhkc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lwhmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bttms")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5in4x")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]

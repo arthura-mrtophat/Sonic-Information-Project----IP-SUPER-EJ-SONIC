@@ -1,0 +1,56 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://ccefepklohhnb"]
+
+[ext_resource type="Texture2D" uid="uid://c13qbbcsf3dy6" path="res://Sprites/Boss/EGG.png" id="1_v4ydt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5crf"]
+atlas = ExtResource("1_v4ydt")
+region = Rect2(292, 0, 73, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v1k8k"]
+atlas = ExtResource("1_v4ydt")
+region = Rect2(0, 0, 73, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jgssa"]
+atlas = ExtResource("1_v4ydt")
+region = Rect2(73, 0, 73, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8tg7"]
+atlas = ExtResource("1_v4ydt")
+region = Rect2(146, 0, 73, 53)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ps6b8"]
+atlas = ExtResource("1_v4ydt")
+region = Rect2(219, 0, 73, 53)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5crf")
+}],
+"loop": true,
+"name": &"Hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v1k8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jgssa")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8tg7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ps6b8")
+}],
+"loop": true,
+"name": &"laugh",
+"speed": 5.0
+}]

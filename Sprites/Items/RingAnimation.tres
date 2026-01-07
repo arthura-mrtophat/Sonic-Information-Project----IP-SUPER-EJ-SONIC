@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://bjjixwqeiuye"]
+
+[ext_resource type="Texture2D" uid="uid://csvq3tl3aerge" path="res://Sprites/Items/RingAnim.png" id="1_t8xai"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nbyw"]
+atlas = ExtResource("1_t8xai")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kmwgp"]
+atlas = ExtResource("1_t8xai")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bfaos"]
+atlas = ExtResource("1_t8xai")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0udtw"]
+atlas = ExtResource("1_t8xai")
+region = Rect2(48, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nbyw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kmwgp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bfaos")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0udtw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

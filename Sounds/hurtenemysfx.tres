@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://di31ieq0ml7ir"]
+
+[ext_resource type="AudioStream" uid="uid://dfogp2jipsg6k" path="res://Sounds/hitboss.wav" id="1_bd2n4"]
+[ext_resource type="Script" uid="uid://unbvt2il2gdm" path="res://Scripts/Classes/SoundEffect.cs" id="2_5ndf4"]
+
+[resource]
+script = ExtResource("2_5ndf4")
+PlayLimit = 4
+SoundType = 6
+Volume = 1.0
+Sound = ExtResource("1_bd2n4")
+metadata/_custom_type_script = "uid://unbvt2il2gdm"

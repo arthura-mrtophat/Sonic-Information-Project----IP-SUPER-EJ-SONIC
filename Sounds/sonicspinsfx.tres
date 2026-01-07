@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://drrng21blmw2p"]
+
+[ext_resource type="AudioStream" uid="uid://cmqn3aad0e1up" path="res://Sounds/Sonic_Spin.wav" id="1_hi537"]
+[ext_resource type="Script" uid="uid://unbvt2il2gdm" path="res://Scripts/Classes/SoundEffect.cs" id="2_moqdx"]
+
+[resource]
+script = ExtResource("2_moqdx")
+PlayLimit = 2
+SoundType = 3
+Volume = 1.0
+Sound = ExtResource("1_hi537")
+metadata/_custom_type_script = "uid://unbvt2il2gdm"

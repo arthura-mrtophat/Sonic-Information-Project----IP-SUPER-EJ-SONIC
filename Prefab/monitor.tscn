@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpfepi2k3km2p"]
+
+[ext_resource type="SpriteFrames" uid="uid://du2obcgjpf7y7" path="res://Sprites/Items/Monitor.tres" id="1_17253"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lfhdk"]
+size = Vector2(28, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ep5q"]
+size = Vector2(24, 25)
+
+[node name="Monitor" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_17253")
+metadata/ItemType = "Monitor"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_lfhdk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_2ep5q")
+disabled = true

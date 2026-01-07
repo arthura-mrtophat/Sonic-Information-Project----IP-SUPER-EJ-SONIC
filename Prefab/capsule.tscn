@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://t68egrjbubj3"]
+
+[ext_resource type="SpriteFrames" uid="uid://3x78pq0fcf35" path="res://Sprites/Boss/capsule.tres" id="1_rbbcs"]
+[ext_resource type="Script" uid="uid://b5ubbw0ipmd3v" path="res://Scripts/Entities/Capsule.cs" id="2_ivo5j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y0qqx"]
+size = Vector2(64, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d671n"]
+size = Vector2(20, 77.5)
+
+[node name="Capsule" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_rbbcs")
+frame_progress = 0.28343496
+script = ExtResource("2_ivo5j")
+metadata/ItemType = "Capsule"
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 10.5)
+shape = SubResource("RectangleShape2D_y0qqx")
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="Area"]
+shape = SubResource("RectangleShape2D_d671n")
+
+[node name="SensorRotation" type="Node2D" parent="."]

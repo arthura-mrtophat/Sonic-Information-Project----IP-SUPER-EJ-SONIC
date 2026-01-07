@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://8y3bhuh4kefi"]
+
+[ext_resource type="AudioStream" uid="uid://0niua3lipd6x" path="res://Sounds/Explode.wav" id="1_ikmgq"]
+[ext_resource type="Script" uid="uid://unbvt2il2gdm" path="res://Scripts/Classes/SoundEffect.cs" id="2_hngls"]
+
+[resource]
+script = ExtResource("2_hngls")
+PlayLimit = 6
+SoundType = 1
+Volume = 1.0
+Sound = ExtResource("1_ikmgq")
+metadata/_custom_type_script = "uid://unbvt2il2gdm"

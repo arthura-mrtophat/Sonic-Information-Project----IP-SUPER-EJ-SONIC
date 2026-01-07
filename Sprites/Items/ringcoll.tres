@@ -1,0 +1,42 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://bfabhn87q0lts"]
+
+[ext_resource type="Texture2D" uid="uid://5r6ftqejl7db" path="res://Sprites/Items/ringcoll.png" id="1_gexpl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hajom"]
+atlas = ExtResource("1_gexpl")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dkqbg"]
+atlas = ExtResource("1_gexpl")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6sfat"]
+atlas = ExtResource("1_gexpl")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76nnj"]
+atlas = ExtResource("1_gexpl")
+region = Rect2(48, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hajom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkqbg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6sfat")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76nnj")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]

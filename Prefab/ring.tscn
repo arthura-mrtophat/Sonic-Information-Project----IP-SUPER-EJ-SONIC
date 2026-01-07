@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://csmdhcqbcbrdb"]
+
+[ext_resource type="SpriteFrames" uid="uid://bjjixwqeiuye" path="res://Sprites/Items/RingAnimation.tres" id="1_nd4us"]
+[ext_resource type="Shape2D" uid="uid://boxcp77k6rjqc" path="res://Prefab/RingCollision.tres" id="2_7hj8k"]
+
+[node name="Ring" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_nd4us")
+frame_progress = 0.47822973
+metadata/ItemType = "Ring"
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="Area"]
+shape = ExtResource("2_7hj8k")

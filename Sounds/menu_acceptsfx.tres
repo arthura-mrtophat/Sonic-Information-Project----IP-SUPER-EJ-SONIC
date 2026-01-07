@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SoundEffect" load_steps=3 format=3 uid="uid://bv1a41wo75y4"]
+
+[ext_resource type="Script" uid="uid://unbvt2il2gdm" path="res://Scripts/Classes/SoundEffect.cs" id="1_nt7yy"]
+[ext_resource type="AudioStream" uid="uid://b2txe1tslpha" path="res://Sounds/MenuAccept.wav" id="1_qpodl"]
+
+[resource]
+script = ExtResource("1_nt7yy")
+SoundType = 7
+Volume = 0.5
+Sound = ExtResource("1_qpodl")
+metadata/_custom_type_script = "uid://unbvt2il2gdm"

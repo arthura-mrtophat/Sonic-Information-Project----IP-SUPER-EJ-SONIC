@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://wyh61uprmgvg"]
+
+[ext_resource type="SpriteFrames" uid="uid://cavmdhbhrh3fg" path="res://Sprites/Boss/debris.tres" id="1_c7r3i"]
+[ext_resource type="Script" uid="uid://yybd553wtq7w" path="res://Scripts/Entities/Debris.cs" id="2_p2r7y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fumb3"]
+
+[node name="Debris" type="AnimatedSprite2D"]
+top_level = true
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("1_c7r3i")
+frame_progress = 0.007919814
+offset = Vector2(0, -8.5)
+script = ExtResource("2_p2r7y")
+
+[node name="SensorRotation" type="Node2D" parent="."]
+top_level = true
+position = Vector2(452, 483)
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="Area"]
+shape = SubResource("RectangleShape2D_fumb3")
+disabled = true

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3ms8pu8hgs65"]
+
+[ext_resource type="SpriteFrames" uid="uid://bfabhn87q0lts" path="res://Sprites/Items/ringcoll.tres" id="1_ncv4s"]
+[ext_resource type="Script" uid="uid://bx7ftly224xeh" path="res://Scripts/DestroyOnEnd.cs" id="2_u6hlb"]
+
+[node name="ringeffect" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_ncv4s")
+script = ExtResource("2_u6hlb")

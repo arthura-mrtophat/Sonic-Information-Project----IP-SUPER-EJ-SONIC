@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bqpwcgiv1n4nj"]
+
+[ext_resource type="AudioStream" uid="uid://c11b6v4f4teo1" path="res://Music/Sonic CD 510 Beta Music - Title Screen.wav" id="1_gkh3c"]
+[ext_resource type="Script" uid="uid://unbvt2il2gdm" path="res://Scripts/Classes/SoundEffect.cs" id="2_7mmjx"]
+
+[resource]
+script = ExtResource("2_7mmjx")
+PlayLimit = 1
+SoundType = 9
+Volume = 1.0
+Sound = ExtResource("1_gkh3c")
+metadata/_custom_type_script = "uid://unbvt2il2gdm"

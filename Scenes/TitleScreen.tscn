@@ -1,0 +1,141 @@
+[gd_scene load_steps=16 format=3 uid="uid://chcffa6888tk5"]
+
+[ext_resource type="Script" uid="uid://c2f8qadgn8rb3" path="res://Scripts/Handlers/AudioHandler.cs" id="1_bawyk"]
+[ext_resource type="Script" uid="uid://ch18d6dcdjce3" path="res://Scripts/Title.cs" id="1_i5sur"]
+[ext_resource type="Texture2D" uid="uid://catef6cqfs7fv" path="res://Sprites/TitleScreen/Bg.png" id="2_7whhf"]
+[ext_resource type="Resource" uid="uid://bqpwcgiv1n4nj" path="res://Music/MUSIC_Title.tres" id="2_pie25"]
+[ext_resource type="Resource" uid="uid://bv1a41wo75y4" path="res://Sounds/menu_acceptsfx.tres" id="3_2jiiu"]
+[ext_resource type="Texture2D" uid="uid://cmmlkfrw680ch" path="res://Sprites/TitleScreen/Emblem.png" id="3_5c2t2"]
+[ext_resource type="Texture2D" uid="uid://bpsomhhy3svhl" path="res://Sprites/TitleScreen/actualsonic.png" id="4_bawyk"]
+[ext_resource type="Shader" uid="uid://cpsnjte36q6xf" path="res://Scenes/TitleScreen.gdshader" id="5_awp6w"]
+[ext_resource type="Texture2D" uid="uid://qk0watg1rtal" path="res://Sprites/TitleScreen/sonic.png" id="5_qfyqv"]
+[ext_resource type="Texture2D" uid="uid://dxund7vjwe0lg" path="res://Sprites/TitleScreen/sonichand.png" id="6_pie25"]
+[ext_resource type="Texture2D" uid="uid://cyjn7wxnd1xv5" path="res://Sprites/TitleScreen/knopkaStart.png" id="7_5c2t2"]
+[ext_resource type="FontFile" uid="uid://cs14n5yidvaft" path="res://Fonts/sonic-1-title-card-fixed.otf" id="7_7whhf"]
+[ext_resource type="Texture2D" uid="uid://dj5y6ecjtunix" path="res://aja.png" id="7_qu6cc"]
+[ext_resource type="Texture2D" uid="uid://bk74lyt5ym3i2" path="res://Sprites/QRCode.png" id="11_2jiiu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4hokt"]
+shader = ExtResource("5_awp6w")
+shader_parameter/frequency = 10.0
+
+[node name="TitleScreen" type="Node2D"]
+
+[node name="AudioHandler" type="Node2D" parent="."]
+script = ExtResource("1_bawyk")
+SoundEffects = [ExtResource("2_pie25"), ExtResource("3_2jiiu")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." node_paths=PackedStringArray("Blackout", "Whiteout", "CreditsText", "PressStart", "Background", "Emblem", "Sonic", "SonicHand", "Rubber", "PositionTracker_Emblem")]
+scale = Vector2(5, 5)
+transform = Transform2D(5, 0, 0, 5, 0, 0)
+script = ExtResource("1_i5sur")
+Blackout = NodePath("Blackout/ColorRect")
+Whiteout = NodePath("Blackout/white")
+CreditsText = NodePath("Blackout/RichTextLabel")
+PressStart = NodePath("ActualTitle/StartToPlay")
+Background = NodePath("ActualTitle/Bg")
+Emblem = NodePath("ActualTitle/Emblem")
+Sonic = NodePath("ActualTitle/Emblem/Sonic")
+SonicHand = NodePath("ActualTitle/Emblem/Sonic_Hand")
+Rubber = NodePath("ActualTitle/Emblem/Rubber")
+PositionTracker_Emblem = NodePath("ActualTitle/EmblemTracker")
+
+[node name="ActualTitle" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Bg" type="Sprite2D" parent="CanvasLayer/ActualTitle"]
+modulate = Color(0.81960785, 0.32941177, 0.105882354, 1)
+texture_repeat = 2
+texture = ExtResource("2_7whhf")
+centered = false
+offset = Vector2(0, -25)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ActualTitle"]
+material = SubResource("ShaderMaterial_4hokt")
+position = Vector2(209.59998, 28.400002)
+scale = Vector2(16.82352, 31.94766)
+texture = ExtResource("7_qu6cc")
+
+[node name="QRCode" type="Sprite2D" parent="CanvasLayer/ActualTitle"]
+visible = false
+top_level = true
+position = Vector2(345.2, 170.20001)
+scale = Vector2(0.82982457, 0.8298246)
+texture = ExtResource("11_2jiiu")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/ActualTitle/QRCode"]
+offset_left = -412.85837
+offset_top = 7.2304363
+offset_right = -254.94034
+offset_bottom = 61.531036
+theme_override_constants/paragraph_separation = 7
+theme_override_fonts/normal_font = ExtResource("7_7whhf")
+theme_override_font_sizes/normal_font_size = 12
+text = "REV01"
+tab_size = 9
+vertical_alignment = 2
+
+[node name="Emblem" type="Sprite2D" parent="CanvasLayer/ActualTitle"]
+position = Vector2(201.6, 89.600006)
+texture = ExtResource("3_5c2t2")
+
+[node name="Sonic" type="Sprite2D" parent="CanvasLayer/ActualTitle/Emblem"]
+texture = ExtResource("4_bawyk")
+offset = Vector2(-1, -12.4)
+hframes = 2
+
+[node name="Rubber" type="Sprite2D" parent="CanvasLayer/ActualTitle/Emblem"]
+position = Vector2(0, 54.999992)
+texture = ExtResource("5_qfyqv")
+offset = Vector2(-3, 0)
+
+[node name="Sonic_Hand" type="Sprite2D" parent="CanvasLayer/ActualTitle/Emblem"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(18.399994, 19.599998)
+texture = ExtResource("6_pie25")
+offset = Vector2(0, -15)
+
+[node name="EmblemTracker" type="Sprite2D" parent="CanvasLayer/ActualTitle"]
+position = Vector2(201.6, 89.600006)
+scale = Vector2(1e-05, 1e-05)
+
+[node name="StartToPlay" type="Sprite2D" parent="CanvasLayer/ActualTitle"]
+position = Vector2(195, 185)
+texture = ExtResource("7_5c2t2")
+
+[node name="Blackout" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Blackout"]
+layout_mode = 0
+offset_left = -32.6
+offset_top = -8.999999
+offset_right = 436.59998
+offset_bottom = 224.59999
+color = Color(0, 0, 0, 1)
+
+[node name="white" type="ColorRect" parent="CanvasLayer/Blackout"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -32.6
+offset_top = -8.999999
+offset_right = 436.59998
+offset_bottom = 224.59999
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Blackout"]
+layout_mode = 0
+offset_right = 386.39996
+offset_bottom = 216.59999
+theme_override_constants/paragraph_separation = 7
+theme_override_fonts/normal_font = ExtResource("7_7whhf")
+text = "IGRA OT
+S.D."
+tab_size = 9
+horizontal_alignment = 1
+vertical_alignment = 1

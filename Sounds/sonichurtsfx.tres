@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://sp0wc0vj7x2d"]
+
+[ext_resource type="AudioStream" uid="uid://ccdygoy1e8cd6" path="res://Sounds/Sonic_Hurt.wav" id="1_mnndc"]
+[ext_resource type="Script" uid="uid://unbvt2il2gdm" path="res://Scripts/Classes/SoundEffect.cs" id="2_iql0p"]
+
+[resource]
+script = ExtResource("2_iql0p")
+PlayLimit = 2
+SoundType = 2
+Volume = 1.0
+Sound = ExtResource("1_mnndc")
+metadata/_custom_type_script = "uid://unbvt2il2gdm"

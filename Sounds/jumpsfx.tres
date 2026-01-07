@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bkla52r62t5la"]
+
+[ext_resource type="AudioStream" uid="uid://dvsc4qcmq245c" path="res://Sounds/Jump.wav" id="1_akm3r"]
+[ext_resource type="Script" uid="uid://unbvt2il2gdm" path="res://Scripts/Classes/SoundEffect.cs" id="1_gyoe7"]
+
+[resource]
+script = ExtResource("1_gyoe7")
+Volume = 1.0
+Sound = ExtResource("1_akm3r")
+metadata/_custom_type_script = "uid://unbvt2il2gdm"

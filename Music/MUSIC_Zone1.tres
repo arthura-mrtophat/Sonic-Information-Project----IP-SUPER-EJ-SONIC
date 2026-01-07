@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dk8tybfuyrcuh"]
+
+[ext_resource type="AudioStream" uid="uid://b5pbvqrdfmfsp" path="res://Music/Palmtree Panic.wav" id="1_mk17h"]
+[ext_resource type="Script" uid="uid://unbvt2il2gdm" path="res://Scripts/Classes/SoundEffect.cs" id="2_c7d3c"]
+
+[resource]
+script = ExtResource("2_c7d3c")
+PlayLimit = 1
+SoundType = 10
+Volume = -15.0
+Sound = ExtResource("1_mk17h")
+metadata/_custom_type_script = "uid://unbvt2il2gdm"

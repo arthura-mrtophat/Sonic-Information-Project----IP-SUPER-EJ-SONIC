@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c11b6v4f4teo1"
+path="res://.godot/imported/Sonic CD 510 Beta Music - Title Screen.wav-48d1f38b7027f5b1aab9e098692b647d.sample"
+
+[deps]
+
+source_file="res://Music/Sonic CD 510 Beta Music - Title Screen.wav"
+dest_files=["res://.godot/imported/Sonic CD 510 Beta Music - Title Screen.wav-48d1f38b7027f5b1aab9e098692b647d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

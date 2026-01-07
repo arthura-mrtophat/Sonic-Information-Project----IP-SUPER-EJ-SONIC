@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="SoundEffect" load_steps=3 format=3 uid="uid://ct3xpkf3nqpfi"]
+
+[ext_resource type="AudioStream" uid="uid://bsh3esmcpbf47" path="res://Sounds/spring.wav" id="1_ujkbt"]
+[ext_resource type="Script" uid="uid://unbvt2il2gdm" path="res://Scripts/Classes/SoundEffect.cs" id="2_d41k0"]
+
+[resource]
+script = ExtResource("2_d41k0")
+PlayLimit = 2
+SoundType = 8
+Volume = 1.0
+Sound = ExtResource("1_ujkbt")
+metadata/_custom_type_script = "uid://unbvt2il2gdm"
